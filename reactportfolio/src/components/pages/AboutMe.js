@@ -4,10 +4,12 @@ export default function AboutMe() {
   return (
     <div>
       <h1>About Me</h1>
+      <a href=''>
+
+      </a>
       <p>
-        Full-stack Developer currently living in Texas. My interests are in application
-        <br>
-          development and databases, passionately pursuing every opportunity for growth.
+        Full-stack Junior Developer living in San Antonio, Texas. Current interests are in application<br>
+          development and databases, persistently pursuing every opportunity to further skillset and experience.
         </br>
       </p>
     </div>

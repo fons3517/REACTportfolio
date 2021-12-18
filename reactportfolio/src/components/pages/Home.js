@@ -6,8 +6,7 @@ import Resume from "./Resume";
 
 export default function Home() {
   return (
-    <main>
-
+    <header>
       <div className="flex-row justify-end">
         <div className=""
           style={{ border: '1px dotted #1a1a1a' }}
@@ -29,11 +28,9 @@ export default function Home() {
         >
           <Resume />
         </div>
-
-
-
       </div>
-    </main>
+    </header>
+
 
   )
 }
