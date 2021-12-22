@@ -1,55 +1,27 @@
-import React from 'react';
+import React, { useState } from "react";
+import { Container } from "react-bootstrap";
+import { emailValidation } from "../utils/helper";
+import { Form, Button } from "react-bootstrap";
 
-export default function Contact() {
+function FormState() {
+  const [state, setState] = useState({ name: '', email: '', message: '' });
+  const [form, setForm] = useState('');
 
+  function validation(e) {
+    if (e.target.name === 'email') {
+      const valid = emailValidation(e.target.value);
+      if (!valid) {
+        setForm('Please use a valid email addresss');
+      }
+      setForm('');
+    }
+    if (!form) {
+      setState({ ...state, [e.target.name]: e.target.value })
+    }
+  }
   return (
+    <div className="mt-5 w-75 container bg-light text-dark">
 
-    <div>
-      <h1>Contact</h1>
-      <div className="flex-row justify center">
-        <div className="col-md-9">
-          <div className="">
-            <img
-              className="mx-auto rounded-circle"
-              src="./assets/img/Gmail-logo-color.ico"
-              alt="Gmail logo"
-            />
-            <a href="mailto:fons3517@gmail.com"
-            >
-              <h4>Gmail</h4>
-            </a
-            >
-          </div>
-        </div>
-      </div>
-      <div className="col-md-9">
-        <div className="">
-          <img
-            className="mx-auto rounded-circle"
-            src="./assets/img/github.ico"
-            alt="GitHub icon"
-          />
-          <a href="https://github.com/fons3517"
-          >
-            <h4>GitHub</h4></a
-          >
-        </div>
-      </div>
-      <div className="col-md-9">
-        <div className="">
-          <img
-            class="mx-auto rounded-circle"
-            src="./assets/img/linkedInjpg.jpg"
-            alt="linkedIn Profile"
-          />
-          <a
-            href="https://www.linkedin.com/in/alfonso-robles-505abb151/"
-          >
-            <h4>linkedIn</h4></a
-          >
-
-        </div>
-      </div>
     </div>
-  );
+  )
 }
