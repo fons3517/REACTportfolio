@@ -15,16 +15,25 @@ export default function Footer() {
               className="btn btn-dark btn-social mx-2"
               href="https://github.com/fons3517"
             >
+              <h5>
+                <AiFillGithub />
+              </h5>
             </a>
             <a
               className="btn btn-dark btn-social mx-2"
               href="https://twitter.com/Fons3517"
             >
+              <h5>
+                <SiTwitter />
+              </h5>
             </a>
             <a
               className="btn btn-dark btn-social mx-2"
               href="https://www.linkedin.com/in/alfonso-robles-3517-agr/"
             >
+              <h5>
+                <SiLinkedin />
+              </h5>
             </a>
           </div>
         </div>

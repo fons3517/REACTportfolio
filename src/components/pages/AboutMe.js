@@ -1,8 +1,9 @@
 import React from 'react';
+import Image from 'react-bootstrap/Image'
 
 export default function AboutMe() {
   return (
-    <article className='row'>
+    <div className=''>
       <div>
         <img
           className='pic'
@@ -24,6 +25,5 @@ export default function AboutMe() {
         of creating something new is extremely inspiring. <b>I look forward to every
           opportunity</b>.
       </p>
-    </article>
-  );
+      );
 }
