@@ -1,9 +1,11 @@
 import React from "react";
+import { AiFillGithub } from 'react-icons/si';
+import { SiTwitter, SiLinkedin } from "react-icons/si";
 
 export default function Footer() {
   return (
-    <footer className="footer py-4">
-      <div className="container">
+    <footer className="w-100 mt-auto bg-light p-3 footer fixed-bottom">
+      <div className="container text-dark justify-content-center d-flex">
         <div className="row align-items-center">
           <div className="col-lg-4 text-lg-start">
             Copyright &copy;❤️️ Alfonso Robles Presentations
@@ -11,18 +13,12 @@ export default function Footer() {
           <div className="col-lg-4 my-3 my-lg-0">
             <a
               className="btn btn-dark btn-social mx-2"
-              href="https://github.com"
-            ><i className="fab fa-github"></i
+              href="https://github.com/fons3517"
             >
             </a>
             <a
               className="btn btn-dark btn-social mx-2"
               href="https://twitter.com/Fons3517"
-            >
-            </a>
-            <a
-              className="btn btn-dark btn-social mx-2"
-              href="https://www.facebook.com/alfonso.robles.39/"
             >
             </a>
             <a
