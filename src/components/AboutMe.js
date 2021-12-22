@@ -9,10 +9,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function AboutMe() {
   return (
     <div className='container bg-light my-5 pb-5 text-dark'> {/*Assist with bootstrap*/}
-      <Image
-        fluid
-        className=""
-        src={Banner} />
       <Row>
         <Col>
           <div>

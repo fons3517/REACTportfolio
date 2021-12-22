@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
+import Home from './components/Home';
 
 
 function App() {
@@ -15,13 +16,12 @@ function App() {
       <BrowserRouter>
         <NavTabs />
         <Switch>
-          <Route exact path="/portfolio" element={<Portfolio />}></Route>
+          <Route exact path="/">{Home}</Route>
+
+          <Route exact path="/portfolio">{Portfolio}</Route>
           <Route exact path="/aboutme" element={<AboutMe />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
           <Route exact path="/resume" element={<Resume />}></Route>
-
-
-
         </Switch>
         <Footer />
       </BrowserRouter>
